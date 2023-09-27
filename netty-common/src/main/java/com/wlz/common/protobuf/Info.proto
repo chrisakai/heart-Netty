@@ -1,0 +1,13 @@
+syntax = "proto2";
+package protobuf;
+
+message Info {
+	required int32 doorSerial = 1;
+	required string assetCode = 2;
+	optional string deviceIMEI = 3;
+	optional string deviceSn = 4;
+	required string deviceIp = 5;
+	required int32 online = 6;
+	required string worksite = 7;
+	required int32 battery= 8;
+}

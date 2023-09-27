@@ -1,0 +1,15 @@
+syntax = "proto2";
+import "Data.proto";
+package protobuf;
+
+message TCPMessage {
+  required sfixed32 headFlag = 1;
+  required sfixed32 length = 2;
+  optional string messageNo = 3;
+  optional string sign = 4;
+  required sfixed32 serialType = 5;
+  optional string messageHead = 6;
+  optional sfixed32 messageTimeout = 7;
+  required sfixed32 DataLen = 8;
+  required Data data = 9;
+}

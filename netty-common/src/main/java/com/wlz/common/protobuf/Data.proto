@@ -1,0 +1,8 @@
+syntax = "proto2";
+import "Info.proto";
+package protobuf;
+
+message Data {
+	required int32 size = 1;
+	repeated Info data = 2;
+}

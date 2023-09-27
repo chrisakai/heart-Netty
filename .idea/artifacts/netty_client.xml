@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="netty-client">
+    <output-path>$PROJECT_DIR$/out/artifacts/netty_client</output-path>
+    <root id="root">
+      <element id="archive" name="netty_client.jar">
+        <element id="module-output" name="netty-client" />
+      </element>
+    </root>
+  </artifact>
+</component>
