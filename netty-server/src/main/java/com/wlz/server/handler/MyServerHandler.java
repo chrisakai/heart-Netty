@@ -85,7 +85,8 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
         mapOut.remove("messageTimeout");
         mapOut.remove("DataLen");
 
-        String jsonOutString = JSON.toJSONString(mapOut.get("json"));
+        String jsonOutString = JSON.toJSONString(mapOut.get("json")).replaceFirst("^\\\"", "")
+                .replaceFirst("\\\"$","");
         System.out.println("数据解析内容:" + jsonOutString);
 
         //业务逻辑处理

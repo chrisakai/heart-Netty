@@ -74,12 +74,12 @@ public class ClientApplication {
 
 		DeviceInfo deviceInfo = new DeviceInfo();
 		deviceInfo.setDoorSerial(1);
-		deviceInfo.setAssetCode("11002301");
-		deviceInfo.setDeviceIMEI("3249238923479");
-		deviceInfo.setDeviceSn("QWHUIHHEWO783");
-		deviceInfo.setDeviceIp("192.168.3.184");
+		deviceInfo.setAssetCode("1022001");
+		deviceInfo.setDeviceIMEI("1215515");
+		deviceInfo.setDeviceSn("a9566812");
+		deviceInfo.setDeviceIp("172.80.11.3");
 		deviceInfo.setOnline(1);
-		deviceInfo.setWorksite("2001235");
+		deviceInfo.setWorksite("USTO16220410008");
 		deviceInfo.setBattery((int) (Math.random()*101));
 
 		JSONArray jsonArray = new JSONArray();
@@ -94,7 +94,7 @@ public class ClientApplication {
 		bytes[28] = (byte)0x00;
 		bytes[29] = (byte)0x00;
 		bytes[30] = (byte)0x00;
-		bytes[31] = (byte)0x9F;
+		bytes[31] = (byte)0xB5;
 
 		for (int i = 0; i < messg.getBytes(StandardCharsets.UTF_8).length; i++) {
 			bytes[32+i] =  messg.getBytes()[i];
